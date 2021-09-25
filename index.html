@@ -12,39 +12,26 @@
     <title>Galen Gidman is a web developer</title>
 
     <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Space+Mono:400,700&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz."
+    >
+
+    <link
         rel="icon"
         type="image/png"
         href="favicon.png"
     >
 
     <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
-
-    <!-- <script type="module">
-        import colors from 'https://cdn.bluepack.dev/tailwindcss/colors';
-
-        window.tailwindConfig = {
-            theme: {
-                extend: {
-                    colors: {
-                        gray: colors.blueGray,
-                        blue: colors.blue
-                    }
-                }
-            }
-        }
-
-        window.tailwindCSS.refresh()
-    </script>
-
-    <script type="tailwind-config">
-        window.tailwindConfig
-    </script> -->
 </head>
 
-<body class="p-10 sm:p-20 bg-black font-mono text-white text-lg sm:text-2xl">
+<body
+    class="p-10 sm:p-20 bg-black text-white text-lg sm:text-2xl"
+    style="font-family: 'Space Mono'"
+>
     <div class="space-y-10 max-w-xl">
         <img
-            src="https://en.gravatar.com/userimage/16841259/be9ecbb465b80c9fecf514b0e049715a.jpg?size=412"
+            src="https://en.gravatar.com/userimage/16841259/be9ecbb465b80c9fecf514b0e049715a.jpg?size=160"
             class="w-20 h-20 rounded-full"
             alt="Galen Gidman's avatar"
         >
@@ -127,18 +114,6 @@
             </li>
         </ul>
     </div>
-
-    <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=UA-83963223-1"
-    ></script>
-
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-83963223-1');
-    </script>
 </body>
 
 </html>
