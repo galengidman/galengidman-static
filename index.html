@@ -17,10 +17,38 @@
         href="favicon.png"
     >
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&display=swap"
+        rel="stylesheet"
+    >
+
     <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+
+    <script type="module">
+        import colors from 'https://cdn.skypack.dev/tailwindcss/colors';
+
+        window.tailwindConfig = {
+            theme: {
+                extend: {
+                    colors: {
+                        sky: colors.sky
+                    }
+                }
+            }
+        }
+
+        window.tailwindCSS.refresh()
+    </script>
+
+    <script type="tailwind-config">
+        window.tailwindConfig
+    </script>
 </head>
 
-<body class="p-10 sm:p-20 bg-black text-white font-mono text-lg sm:text-2xl">
+<body
+    class="p-10 sm:p-20 text-sky-900 text-lg sm:text-3xl !leading-snug"
+    style="font-family: 'Space Grotesk'"
+>
     <div class="space-y-10 max-w-xl">
         <img
             src="https://en.gravatar.com/userimage/16841259/be9ecbb465b80c9fecf514b0e049715a.jpg?size=160"
@@ -32,7 +60,7 @@
             <h1 class="inline font-bold">Galen Gidman</h1> is a web developer specializing in WordPress and Laravel
             (specifically, the <a
                 href="https://tallstack.dev/"
-                class="hover:text-yellow-300"
+                class="hover:text-sky-500"
                 target="_blank"
             >TALL stack</a>).
         </div>
@@ -40,7 +68,7 @@
         <div>
             <a
                 href="mailto:galen@galengidman.com"
-                class="hover:text-yellow-300"
+                class="hover:text-sky-500"
             >galen@galengidman.com</a>
         </div>
 
@@ -48,7 +76,7 @@
             <li>
                 <a
                     href="https://twitter.com/galengidman"
-                    class="block hover:text-yellow-300"
+                    class="block hover:text-sky-500"
                     target="_blank"
                 >
                     <svg
@@ -68,7 +96,7 @@
             <li>
                 <a
                     href="https://github.com/galengidman"
-                    class="block hover:text-yellow-300"
+                    class="block hover:text-sky-500"
                     target="_blank"
                 >
                     <svg
@@ -88,7 +116,7 @@
             <li>
                 <a
                     href="https://dribbble.com/galen"
-                    class="block hover:text-yellow-300"
+                    class="block hover:text-sky-500"
                     target="_blank"
                 >
                     <svg
