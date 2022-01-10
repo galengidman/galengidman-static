@@ -18,7 +18,7 @@
     >
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.@"
         rel="stylesheet"
     >
 
@@ -51,18 +51,20 @@
             max-width: 400px;
         }
 
-        .container>*+* {
-            margin-top: 20px;
-        }
-
         img {
+            display: block;
             width: 80px;
             height: 80px;
             border-radius: 100%;
+            margin-bottom: 30px;
         }
 
         h1 {
             display: inline;
+        }
+
+        .container div:last-child {
+            margin-top: 20px;
         }
 
         @media (min-width: 800px) {
@@ -81,11 +83,7 @@
         >
 
         <div>
-            <h1>Galen Gidman</h1> is a web developer specializing in WordPress and Laravel
-            (specifically, the <a
-                href="https://tallstack.dev/"
-                target="_blank"
-            >TALL stack</a>).
+            <h1>Galen Gidman</h1> is a web developer specializing in WordPress and Laravel.
         </div>
 
         <div>
